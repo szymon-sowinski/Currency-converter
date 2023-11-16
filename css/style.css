@@ -30,6 +30,35 @@ html {
     font-size: 25px;
 }
 
+.form__element {
+    border-radius: 10px;
+    padding: 5px 3px;
+    width: 250px;
+    text-align: center;
+}
+
+.form__element:hover {
+    background-color: #eee;
+}
+
+.form__labelText {
+    display: inline-block;
+    width: 370px;
+}
+
+.form__paragraph {
+    margin: 20px;
+}
+
+.form__paragraph--required {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.form__paragraph--italic {
+    font-style: italic;
+}
+
 .form__button {
     background-color: rgb(5, 199, 134);
     width: 30%;
@@ -40,31 +69,6 @@ html {
 
 .form__button:hover {
     background-color: rgb(31, 249, 177);
-}
-
-.form__paragraph--required {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.form__paragraph {
-    margin: 20px;
-}
-
-.form__labelText {
-    display: inline-block;
-    width: 370px;
-}
-
-.form__element {
-    border-radius: 10px;
-    padding: 5px 3px;
-    width: 250px;
-    text-align: center;
-}
-
-.form__element:hover {
-    background-color: #eee;
 }
 
 .form__result {

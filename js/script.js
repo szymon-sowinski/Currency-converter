@@ -1,10 +1,16 @@
 {
-    let formButton = document.querySelector(".js-submit");
-
     const calculateResult = (amount, currency) => {
         const EUR = 4.3854;
         const GBP = 5.0119;
         const USD = 4.0415;
+        const CHF = 4.5452;
+        const CZK = 0.1793;
+        const CAD = 2.9506;
+        const AUD = 2.6256;
+        const JPY = 2.6714;
+        const DKK = 0.5879;
+        const ISK = 2.8607;
+        const MXN = 0.2341;
 
         switch (currency) {
             case "EUR":
@@ -15,6 +21,30 @@
 
             case "USD":
                 return amount / USD;
+
+            case "CHF":
+                return amount / CHF;
+
+            case "CZK":
+                return amount / CZK;
+
+            case "CAD":
+                return amount / CAD;
+
+            case "AUD":
+                return amount / AUD;
+
+            case "JPY":
+                return amount / JPY;
+
+            case "DKK":
+                return amount / DKK;
+
+            case "ISK":
+                return amount / ISK;
+
+            case "MXN":
+                return amount / MXN;
         }
     }
 

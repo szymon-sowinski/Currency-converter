@@ -23,9 +23,18 @@
                         Wybierz walutę, na którą chcesz przeliczyć:
                     </span>
                     <select class="form__currency form__element js-currency" name="currency">
-                        <option value="EUR">EURO</option>
-                        <option value="GBP">FUNTY</option>
-                        <option value="USD">DOLARY</option>
+                        <option value="EUR">euro</option>
+                        <option value="GBP">funt szterling</option>
+                        <option value="CHF">frank szwajcarski</option>
+                        <option value="USD">dolar amerykański</option>
+                        <option value="AUD">dolar australijski</option>
+                        <option value="CAD">dolar kanadyjski</option>
+                        <option value="CZK">korona czeska</option>
+                        <option value="DDK">korona duńska</option>
+                        <option value="ISK">korona islandzka</option>
+                        <option value="JPY">jen (Japonia)</option>
+                        <option value="MXN">peso meksykańskie</option>
+                        
                     </select>
                 </label>
             </p>
@@ -34,12 +43,13 @@
                     <span class="form__labelText">
                         Wprowadź kwotę, jaką chcesz przeliczyć:*
                     </span>
-                    <input class="form__element js-amount" type="number" name="amount" min="0" required step="0.1"
+                    <input class="form__element js-amount" type="number" name="amount" min="0" required step="0.01"
                         placeholder="Podaj kwotę"> zł
                     (PLN)
                 </label>
             </p>
             <p class="form__paragraph form__paragraph--required">* - pole wymagane</p>
+            <p class="form__paragraph form__paragraph--italic">Bieżące kursy średnie walut obcych w złotych z dnia 16.11.2023 określonych w § 2 pkt 1 i 2 uchwały Nr 51/2002 Zarządu Narodowego Banku Polskiego z dnia 23 września 2002 r. w sprawie sposobu wyliczania i ogłaszania bieżących kursów walut obcych (Dz. Urz. NBP z 2023 r. poz. 1)</p>
             <p class="form__paragraph form__paragraph--results">
                 <span class="js-result"></span>
             </p>
