@@ -38,7 +38,7 @@ html {
 }
 
 .form__element:hover {
-    background-color: #eee;
+    background-color: rgb(237, 237, 237)
 }
 
 .form__labelText {
@@ -48,6 +48,7 @@ html {
 
 .form__paragraph {
     margin: 20px;
+    text-shadow: 1px 1px 1px rgb(167, 153, 153);
 }
 
 .form__paragraph--required {
@@ -57,6 +58,7 @@ html {
 
 .form__paragraph--italic {
     font-style: italic;
+    text-align: justify;
 }
 
 .form__button {
