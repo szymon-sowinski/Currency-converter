@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <title>Kalkulator walut</title>
+</head>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator walut</legend>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">
+                        Wybierz walutę, na którą chcesz przeliczyć:
+                    </span>
+                    <select class="form__currency form__element js-currency" name="currency">
+                        <option value="EUR">EURO</option>
+                        <option value="GBP">FUNTY</option>
+                        <option value="USD">DOLARY</option>
+                    </select>
+                </label>
+            </p>
+            <p class="form__paragraph">
+                <label>
+                    <span class="form__labelText">
+                        Wprowadź kwotę, jaką chcesz przeliczyć:*
+                    </span>
+                    <input class="form__element js-amount" type="number" name="amount" min="0" required step="0.1"
+                        placeholder="Podaj kwotę"> zł
+                    (PLN)
+                </label>
+            </p>
+            <p class="form__paragraph form__paragraph--required">* - pole wymagane</p>
+            <p class="form__paragraph form__paragraph--results">
+                <span class="js-result"></span>
+            </p>
+        </fieldset>
+        <button class="form__button js-submit">Przelicz!</button>
+        <button type="reset" class="form__button js-resetResult">Wyczyść formularz!</button>
+    </form>
+</body>
+
+</html>
