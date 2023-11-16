@@ -10,8 +10,8 @@ html {
 
 .body {
     max-width: 800px;
+    background-image: url("../images/tlo.jpg");
     margin: auto;
-    background-color: rgb(245, 227, 208);
     font-size: 20px;
 }
 
