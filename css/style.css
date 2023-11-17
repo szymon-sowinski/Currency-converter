@@ -10,7 +10,10 @@ html {
 
 .body {
     max-width: 800px;
-    background-image: url("../images/tlo.jpg");
+    background-image: url("../images/background-photo.jpg");
+    background-repeat: no-repeat repeat;
+    background-position: center;
+    background-size: cover;
     margin: auto;
     font-size: 20px;
 }
@@ -38,7 +41,7 @@ html {
 }
 
 .form__element:hover {
-    background-color: rgb(237, 237, 237)
+    background-color: rgb(150, 142, 142)
 }
 
 .form__labelText {
@@ -48,7 +51,7 @@ html {
 
 .form__paragraph {
     margin: 20px;
-    text-shadow: 1px 1px 1px rgb(167, 153, 153);
+    text-shadow: 1px 1px 1px rgb(165, 158, 158);
 }
 
 .form__paragraph--required {
@@ -61,9 +64,9 @@ html {
     text-align: justify;
 }
 
-.form__button {
+.form__button {  
     background-color: rgb(5, 199, 134);
-    width: 30%;
+    width: 40%;
     border-radius: 10px;
     padding: 5px 0;
     margin-top: 20px;
