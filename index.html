@@ -8,7 +8,8 @@
     <link rel="icon" href="images/icon.png">
     <meta property="og:image" content="images/share.png">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <script src="js/script.js" defer></script>
     <title>Kalkulator walut</title>
 </head>
@@ -22,7 +23,7 @@
                     <span class="form__labelText">
                         Wybierz walutę, na którą chcesz przeliczyć:
                     </span>
-                    <select class="form__currency form__element js-currency" name="currency">
+                    <select class="form__element js-currency" name="currency">
                         <option value="EUR">euro</option>
                         <option value="GBP">funt szterling</option>
                         <option value="CHF">frank szwajcarski</option>
@@ -34,7 +35,7 @@
                         <option value="ISK">korona islandzka</option>
                         <option value="JPY">jen (Japonia)</option>
                         <option value="MXN">peso meksykańskie</option>
-                        
+
                     </select>
                 </label>
             </p>
@@ -49,13 +50,15 @@
                 </label>
             </p>
             <p class="form__paragraph form__paragraph--required">* - pole wymagane</p>
-            <p class="form__paragraph form__paragraph--italic">Bieżące kursy średnie walut obcych w złotych z dnia 16 listopada 2023 określonych w § 2 pkt 1 i 2 uchwały Nr 51/2002 Zarządu Narodowego Banku Polskiego z dnia 23 września 2002 r. w sprawie sposobu wyliczania i ogłaszania bieżących kursów walut obcych (Dz. Urz. NBP z 2023 r. poz. 1)</p>
             <p class="form__paragraph form__paragraph--results">
                 <span class="js-result"></span>
             </p>
+            <p class="form__paragraph form__paragraph--italic">Bieżące kursy średnie walut obcych w złotych z dnia 16
+                listopada 2023 określonych w § 2 pkt 1 i 2 uchwały Nr 51/2002 Zarządu Narodowego Banku Polskiego z dnia
+                23 września 2002 r. w sprawie sposobu wyliczania i ogłaszania bieżących kursów walut obcych (Dz. Urz.
+                NBP z 2023 r. poz. 1)</p>
         </fieldset>
         <button class="form__button js-submit">Przelicz!</button>
-        <button type="reset" class="form__button js-resetResult">Wyczyść formularz!</button>
     </form>
 </body>
 

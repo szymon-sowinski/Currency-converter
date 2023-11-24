@@ -67,16 +67,10 @@
         updateResult(amount, currency, result);
     }
 
-    const resetFormResult = () => {
-        formResult.innerHTML = "";
-    }
-
     const init = () => {
         const formElement = document.querySelector(".js-form");
-        const resetResult = document.querySelector(".js-resetResult");
 
         formElement.addEventListener("submit", onFormSubmit);
-        resetResult.addEventListener("submit", resetFormResult);
     }
 
     init();

@@ -1,29 +1,10 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-::after,
-::before {
-    box-sizing: inherit;
-}
-
-.body {
-    max-width: 800px;
-    background-image: url("../images/background-photo.jpg");
-    background-repeat: no-repeat repeat;
-    background-position: center;
-    background-size: cover;
-    margin: auto;
-    font-size: 20px;
-}
-
 .form {
     margin-top: 100px;
 }
 
 .form__fieldset {
     border-radius: 10px;
+    background-color: white;
 }
 
 .form__legend {
@@ -41,7 +22,7 @@ html {
 }
 
 .form__element:hover {
-    background-color: rgb(150, 142, 142)
+    background-color: rgb(236, 236, 236);
 }
 
 .form__labelText {
@@ -51,7 +32,7 @@ html {
 
 .form__paragraph {
     margin: 20px;
-    text-shadow: 1px 1px 1px rgb(165, 158, 158);
+    text-shadow: 1px 1px 1px rgb(211, 206, 206);
 }
 
 .form__paragraph--required {
@@ -62,9 +43,10 @@ html {
 .form__paragraph--italic {
     font-style: italic;
     text-align: justify;
+    font-size: 15px;
 }
 
-.form__button {  
+.form__button {
     background-color: rgb(5, 199, 134);
     width: 40%;
     border-radius: 10px;
